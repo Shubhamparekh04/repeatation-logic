@@ -1,104 +1,74 @@
-// question 1
+// Question 1 - Print odd numbers from 1 to 15.
+// let num =1;
 
-// const userAge = prompt("Enter your Age please :");
-
-// if (userAge > 18) {
-//     console.log("Welcome, You are eligible!");
-// } else {
-//     console.log("Sorry, You are not eligible");
+// while (num<=15){
+//     if(num%2 !== 0){
+//         console.log(num);
+//     }
+//     num++;
 // }
 
+// 2- program to find sum of first and last digit of a number. Using while loop
 
-// question 2
+// let num1 = 42345;
+// console.log('Number is : ' + num1);
+// let lastDigit = num1%10;
 
-// const currentTemp = prompt("Enter Temperature :");
-
-
-// if (currentTemp > 30){
-//     console.log("It's hot outside !");
-// } else {
-//     if(currentTemp > 20 && currentTemp < 30){
-//         console.log("It's Pleasant day!");
-//     }else {
-//         console.log("It's cold outside !");
-//     }
+// while (num1 >= 10){
+// num1 = (num1 - num1%10)/10;
 // }
 
+// console.log("first Digit : " +num1);
+// console.log("Last Digit : " +lastDigit);
+
+// console.log("sum of first & last digit is : " + (num1+lastDigit));
 
 
+// 3- program to count number of digits in a number. Using while loop.
 
-
-// question 3
-
-// const score = 59;
-
-
-// if (score > 90) {
-//     console.log("Grade A");
-// } else {
-
-//     if (score > 80 && score < 89) {
-//         console.log("Grade B");
-//     } else {
-//         if (score > 70 && score < 79) {
-//             console.log("Grade C");
-//         } else {
-//             if (score > 60 && score < 69) {
-//                 console.log("Grade D");
-//             } else {
-//                 console.log("Grade F");
-//             }
-//         }
-//     }
+// let userNum = 80008;
+// let count = 0;
+// while (userNum>=1){
+//     userNum = (userNum - userNum%10)/10;
+//     count++;
 // }
 
+// console.log('Total number are : ' + count);
 
-// question 4
+
+// 4- Program to Print the Fibonacci Sequence.
+
+// let num = 200;
+
+//   let a = 0 ;
+//   let b = 1;
+//   let sum = 0 ;
+//   let fibo = '0 1 ';
+
+//   while (sum <=  num){
+//     sum = a + b ;
+//     a = b ;
+//     b = sum;
+//     fibo += sum + ' '; 
+//   }
+
+//   console.log(fibo);
 
 
-// const userAge = prompt("Enter your Age please :");
+// 5- JavaScript Program to Find the Palindrome Number or not.
 
-// if (userAge <= 12) {
-//     console.log("Child ticket: $10");
-// } else {
-//     if (userAge >= 13 && userAge<=64){
-//         console.log("Adult ticket: $20");
-//     } else {
-//         console.log("Senior citizen ticket: $15");
-//     }
+// let uNum = 121;
+// let orgNum = uNum ;
+
+// let revNum ='';
+
+// while (uNum > 0){
+//     revNum += uNum%10;
+//     uNum = (uNum - uNum%10)/10
 // }
 
-
-// question 5
-
-// const dayOfWeek = prompt("Enter day number:");
-
-// if (dayOfWeek == 1) {
-//     console.log("Monday");
+// if (Number(revNum) == orgNum){
+//     console.log('Num is Palindrome');
 // } else {
-//     if (dayOfWeek == 2) {
-//         console.log("Tuesday");
-//     } else {
-//         if (dayOfWeek == 3) {
-//             console.log("Wednesday");
-//         } else {
-//             if (dayOfWeek == 4) {
-//                 console.log("Thursday");
-//             } else {
-//                 if (dayOfWeek == 5) {
-//                     console.log("Friday");
-//                 } else {
-//                     if (dayOfWeek == 6) {
-//                         console.log("Saturday");
-//                     } else {
-//                         if (dayOfWeek == 7) {
-//                             console.log("Sunday");
-//                         } else {
-//                             console.log("Invalid day number");
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
+//     console.log('Num is not Palindrome');
 // }
